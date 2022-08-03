@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome.css" />
+    <style>
+      .quest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      .sec6 {
+        background-color: #000000;
+        color: white;
+        border-bottom: 5px solid #222222;
+        position: relative;
+        height: 800px;
+      }
+      .qlist {
+        height: 600px;
+        width: 900px;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+      }
+      .qlist button {
+        border-bottom: 5px solid black;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        background-color: #303030;
+        padding-left: 10px;
+        text-decoration: none;
+        position: relative;
+        font-size: 40px;
+      }
+      .hid {
+        color: white;
+        position: relative;
+        display: none;
+      }
+
+      .qlist i {
+        position: absolute;
+        top: 10%;
+        right: 50px;
+        color: white;
+      }
+
+      .qlist button,
+      .qlist button:hover,
+      .qlist button:focus,
+      .qlist button:active {
+        color: inherit;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sec6">
+      <div class="quest">
+        <div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="qlist">
+          <button onclick="show_p('one')">
+            What is Netflix?
+            <i class="fa-plus"></i>
+          </button>
+          <p class="hid" id="one">iam hidden</p>
+          <button onclick="show_p('two')">
+            What is Netflix?
+            <i class="fa-plus"></i>
+          </button>
+          <p class="hid" id="two">iam hidden</p>
+          <button onclick="show_p('three')">
+            What is Netflix?
+            <i class="fa-plus"></i>
+          </button>
+          <p class="hid" id="three">iam hidden</p>
+          <button onclick="show_p('four')">
+            What is Netflix?
+            <i class="fa-plus"></i>
+          </button>
+          <p class="hid" id="four">iam hidden</p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
